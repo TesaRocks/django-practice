@@ -17,4 +17,6 @@ def rita(request):
 
 
 def greet(request, name):
-    return render(request, "Hello/greet.html", {name: name.capitalize()})
+    return render(request, "Hello/greet.html", {
+        "name": name.capitalize()
+    })
